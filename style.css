@@ -1,0 +1,118 @@
+body {
+    background: linear-gradient(#ff9ecf, #ffd6eb);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 80px;
+}
+
+h1 {
+    color: #ff2f92;
+    font-size: 45px;
+}
+
+p {
+    color: #444;
+    font-size: 22px;
+}
+.corazon {
+    position: fixed;
+    bottom: -50px;
+    font-size: 40px;
+    animation: subir 6s linear infinite;
+}
+
+.c1 {
+    left: 10%;
+}
+
+.c2 {
+    left: 30%;
+    animation-delay: 1s;
+}
+
+.c3 {
+    left: 50%;
+    animation-delay: 2s;
+}
+
+.c4 {
+    left: 70%;
+    animation-delay: 3s;
+}
+
+.c5 {
+    left: 90%;
+    animation-delay: 4s;
+}
+
+@keyframes subir {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-100vh);
+    }
+}
+.foto {
+    width: 250px;
+    border-radius: 20px;
+    margin-top: 30px;
+    box-shadow: 0 0 25px rgba(255, 0, 120, 0.7);
+    animation: brilloFoto 3s ease-in-out infinite;
+}
+@keyframes brilloFoto {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+#mensaje {
+    white-space: pre-line;
+    font-size: 22px;
+    color: #ff2f92;
+    margin-top: 25px;
+    line-height: 1.6;
+}
+.noche {
+    background: linear-gradient(#1b1b3a, #302b63);
+    color: white;
+}
+
+.noche h1 {
+    color: #ffb6e6;
+}
+
+.noche p {
+    color: #f5e6ff;
+}
+
+.noche #mensaje {
+    color: #ffd1f0;
+}
+
+.noche button {
+    background: #6c63ff;
+}
+@keyframes corazonSube {
+
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+}
